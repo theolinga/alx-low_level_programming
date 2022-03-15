@@ -12,8 +12,8 @@ int main(void)
 	int counter;
 	unsigned long first_number, second_number, result;
 
-	first_number = 0;
-	second_number = 1;
+	first_number = 1;
+	second_number = 2;
 
 	for (counter = 1; counter <= 97; counter++)
 	{
