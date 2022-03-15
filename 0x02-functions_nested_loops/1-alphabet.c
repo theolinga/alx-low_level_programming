@@ -2,18 +2,20 @@
 
 /**
  * main - check the code
- * print_alphabet - Functions prints the alphabet in lowercase
+ *
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line
+ *
  * Return: Always 0;
  */
 
 void print_alphabet(void)
 {
-	char c = 'a';
+	char y = 'a';
 	int i;
 
 	for (i = 0; i < 26; i++)
 	{
-		_putchar(c + i);
+		_putchar(y + i);
 	}
 	_putchar(10);
 }
