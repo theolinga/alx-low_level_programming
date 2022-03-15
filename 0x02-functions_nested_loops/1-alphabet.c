@@ -2,7 +2,7 @@
 
 /**
  * main - check the code
- *
+ * print_alphabet - Functions prints the alphabet in lowercase
  * Return: Always 0;
  */
 
