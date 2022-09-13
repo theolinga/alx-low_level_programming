@@ -1,18 +1,29 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - get the sum of all the data `n` of a `dlistint_t` LL
- * @head: head of doubly LL
- * Return: sum of all `n` or 0 if LL is empty
+ * sum_dlistint - returns the sum of all the data (n)
+ * of a doubly linked list
+ *
+ * @head: head of the list
+ * Return: sum of the data
  */
 int sum_dlistint(dlistint_t *head)
 {
 	int sum;
-	dlistint_t *tmp;
 
-	tmp = head;
-	for (sum = 0; tmp; tmp = tmp->next)
-		sum += tmp->n;
+	sum = 0;
+
+	if (head != NULL)
+	{
+		while (head->prev != NULL)
+			head = head->prev;
+
+		while (head != NULL)
+		{
+			sum += head->n;
+			head = head->next;
+		}
+	}
 
 	return (sum);
 }

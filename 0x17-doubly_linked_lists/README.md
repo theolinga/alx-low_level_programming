@@ -1,2 +1,1 @@
-0x16. Doubly linked lists
-
+# Doubly linked lists
